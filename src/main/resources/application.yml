@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/anshintrade?useUnicode=true&characterEncoding=utf8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDateTimeCode=false&serverTimezone=JST&connectionTimeZone=SERVER
+    username: app-user
+    password: Ansh1ntrade
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: anshintrade
+      connection-timeout: 20000
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 300000
+      max-lifetime: 1200000
